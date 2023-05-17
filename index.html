@@ -43,59 +43,71 @@
   <div class="main-banner">
     <div class="banner-background">
       <div class="text-banner">
-        <h1>GroveDB is the first database to support cryptographic proofs for complex queries</h1>
+        <h1>GroveDB: the first database to support cryptographic proofs for complex queries</h1>
         <p>Store and retrieve data with absolute confidence.</p>
       </div>
     </div>
   </div>
   <div class="section section-one">
-    <h2>GroveDB Features</h2>
+    <h2>Get a head start with GroveDB</h2>
     <div class="block-icons">
         <div class="feature-block">
-            <h3>Broad</h3>
             <div class="icon-imgs">
                 <img src="img/icon-1.svg">
                 <div class="icon-text">
                     <h6>Trustless</h6>
-                    <p>All query results can be cryptographically proven</p>
+                    <p>Prove all your query results cryptographically</p>
                 </div>
             </div>
             <div class="icon-imgs">
                 <img src="img/icon-2.svg">
                 <div class="icon-text">
                     <h6>Efficient</h6>
-                    <p>Proofs are efficient in terms of both size and time</p>
+                    <p>Benefit from quick and lightweight proofs</p>
                 </div>
             </div>
             <div class="icon-imgs">
                 <img src="img/icon-3.svg">
                 <div class="icon-text">
                     <h6>Comprehensive</h6>
-                    <p>Support for secondary indexes and complex queries</p>
+                    <p>Get support for secondary indexes and complex queries</p>
                 </div>
             </div>
         </div>
             <div class="feature-block">
-                <h3>Broad</h3>
                 <div class="icon-imgs">
                     <img src="img/icon-4.svg">
                     <div class="icon-text">
                         <h6>Complex query proofs</h6>
-                        <p>Proofs for much more than just simple gets</p>
+                        <p>Prove much more than just simple gets</p>
+                    </div>
+                </div>
+                <div class="icon-imgs">
+                    <img src="img/icon-5.svg">
+                    <div class="icon-text">
+                        <h6>Inclusion proofs</h6>
+                        <p>Verify the presence of items</p>
                     </div>
                 </div>
                 <div class="icon-imgs">
                     <img src="img/icon-5.svg">
                     <div class="icon-text">
                         <h6>Non-inclusion proofs</h6>
-                        <p>Verify the absence of items as well as their presence</p>
+                        <p>Verify the absence of items</p>
                     </div>
                 </div>
                 <div class="icon-imgs">
+                    <img src="img/icon-5.svg">
+                    <div class="icon-text">
+                        <h6>ACID compliency</h6>
+                        <p>Benefit from ACID properties</p>
+                    </div>
+                </div>              
+                <div class="icon-imgs">
                     <img src="img/icon-6.svg">
                     <div class="icon-text">
-                        <h6>Combinable tree types</h6>
-                        <p>Different tree types, such as sum trees, can be used within the same graph</p>
+                        <h6>Flexible tree types</h6>
+                        <p>Use different tree types within the same graph</p>
                     </div>
                 </div>
                 <div class="icon-imgs">
@@ -109,7 +121,7 @@
                     <img src="img/icon-8.svg">
                     <div class="icon-text">
                         <h6>Operation costs</h6>
-                        <p>Get the cost for operations in terms of storage and computation</p>
+                        <p>Easily get the storage and computational cost of operations </p>
                     </div>
                 </div>
             </div>
@@ -120,18 +132,24 @@
         <div class="index-block">
             <span class="colored-text">Secondary Indexes</span>
             <h4>What are secondary indexes?</h4>
+            <div class="text-p">
+                 <p>Secondary indexes are important query parameters. Learn more.</p>
+            </div>
             <a href="/"><img src="img/plus-icon.svg"></a>
         </div>
         <div class="index-block">
             <span class="colored-text">Cryptographic Proofs</span>
             <h4>What are cryptographic proofs?</h4>
+            <div class="text-p">
+                 <p> Proofs enable you to provide absolute certainty on query results. Learn more.</p>
+            </div>
             <a href="/"><img src="img/plus-icon.svg"></a>
         </div>
     </div>
     <div class="block-design">
         <div class="title-text">
           <span class="colored-text">Design</span>
-          <h2>How is GroveDB’s design unique?</h2>
+          <h2>GroveDB is cutting-edge technology</h2>
         </div>
         <div class="text-p">
           <p>GroveDB is the first production-level implementation of a hierarchical authenticated data structure (HADS), largely inspired by <a href="https://eprint.iacr.org/2015/351.pdf" target="_blank">Database Outsourcing with Hierarchical Authenticated Data Structures</a>.</p>
@@ -143,13 +161,13 @@
         <div class="block-text">
             <span class="colored-text">HADS</span>
             <h2>What is a HADS?</h2>
-            <p>In GroveDB, additional subtrees are automatically created for secondary indexes, and each secondary index subtree has additional subtrees for each unique value, creating a hierarchy of trees and items.</p>
-            <p>This architecture combined with Merk allows for cryptographic proofs to be provided with secondary index query results efficiently.</p>
+            <p>A HADS is, simply speaking, an ADS (authenticated data structures) containing ADSs.This architecture allows to efficiently provide cryptographic proofs alongside secondary index query results.</p>
+            <p>In our case, it's a tree containing trees which themselves may contain trees and so forth. Additional subtrees are automatically created for secondary indexes, and each secondary index subtree has additional subtrees for each unique value.</p>          
             <p>For example, say there is a “Restaurants Who Accept Dash” contract with a “Restaurants” document type. One of the secondary indexes for this document type might be “City”, which indicates which city the restaurant is located in.</p>
             <p>This “City” secondary index would have its own subtree which stores all of the city names for which there are restaurants in the contract. Each city would then have its own subtree, containing the restaurants in that city.</p>
         </div>
         <div class="benefit-block">
-            <h5>Benefits of a HADS</h5>
+            <h5>Benefits of a HADS:</h5>
             <div class="list">
                 <img src="img/icon-9.svg"><p>Efficient proof generation for complex queries</p>
             </div>
@@ -160,11 +178,8 @@
                 <img src="img/icon-9.svg"><p>Support for compound indexes</p>
             </div>
             <div class="list">
-                <img src="img/icon-9.svg"><p>Multiple tree types may be used in the same “grove”</p>
+                <img src="img/icon-9.svg"><p>Secondary index proofs are finally market-ready</p>
             </div>
-            <div class="note-block">
-                <p><strong>Note</strong> that the secondary index subtrees contain references to items rather than the items themselves in order to save on storage space.</p>
-           </div>
         </div>
     </div>
   </div>
@@ -208,7 +223,7 @@
             <img src="img/icon-9.svg">
             <div class="icon-text">
                 <h6>Checkpointing</h6>
-                <p>Merk can create checkpoints on disk (an immutable view of the entire store at a certain point in time) without blocking, so there are no delays in availability or liveness.</p>
+                <p>Merk creates checkpoints on disk (an immutable view of the entire store at a certain point in time) without delays in availability or liveness.</p>
             </div>
         </div>
         <div class="checkmark-block">
