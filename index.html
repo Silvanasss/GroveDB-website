@@ -155,9 +155,8 @@
         <div class="block-text">
             <span class="colored-text">HADS</span>
             <h2>What is an HADS?</h2>
-            <p>An HADS is, simply speaking, an ADS (authenticated data structures) containing ADSs.</p>
-            <p>This architecture allows to efficiently provide cryptographic proofs alongside secondary index query results.</p>
-            <p>In our case, it's simply a tree containing trees which themselves may contain trees and so forth. Additional subtrees are automatically created for secondary indexes, and each secondary index subtree has additional subtrees for each unique value.</p>          
+            <p>An HADS is, simply speaking, an ADS (authenticated data structures) containing ADSs.This architecture allows to efficiently provide cryptographic proofs alongside secondary index query results.</p>
+            <p>In our case, it's a tree containing trees which themselves may contain trees and so forth. Additional subtrees are automatically created for secondary indexes, and each secondary index subtree has additional subtrees for each unique value.</p>          
             <p>For example, say there is a “Restaurants Who Accept Dash” contract with a “Restaurants” document type. One of the secondary indexes for this document type might be “City”, which indicates which city the restaurant is located in.</p>
             <p>This “City” secondary index would have its own subtree which stores all of the city names for which there are restaurants in the contract. Each city would then have its own subtree, containing the restaurants in that city.</p>
         </div>
