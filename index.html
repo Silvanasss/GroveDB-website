@@ -85,21 +85,14 @@
                 <div class="icon-imgs">
                     <img src="img/icon-5.svg">
                     <div class="icon-text">
-                        <h6>Inclusion proofs</h6>
-                        <p>Verify the presence of items</p>
+                        <h6>Inclusion and non-inclusion proofs</h6>
+                        <p>Verify the presence or absence of items</p>
                     </div>
                 </div>
                 <div class="icon-imgs">
                     <img src="img/icon-5.svg">
                     <div class="icon-text">
-                        <h6>Non-inclusion proofs</h6>
-                        <p>Verify the absence of items</p>
-                    </div>
-                </div>
-                <div class="icon-imgs">
-                    <img src="img/icon-5.svg">
-                    <div class="icon-text">
-                        <h6>ACID compliency</h6>
+                        <h6>ACID compliancy</h6>
                         <p>Benefit from ACID properties</p>
                     </div>
                 </div>              
@@ -133,7 +126,7 @@
             <span class="colored-text">Secondary Indexes</span>
             <h4>What are secondary indexes?</h4>
             <div class="text-p">
-                 <p>Secondary indexes are important query parameters. Learn more.</p>
+                 <p>Secondary indexes are important query parameters.</p>
             </div>
             <a href="/"><img src="img/plus-icon.svg"></a>
         </div>
@@ -141,7 +134,7 @@
             <span class="colored-text">Cryptographic Proofs</span>
             <h4>What are cryptographic proofs?</h4>
             <div class="text-p">
-                 <p> Proofs enable you to provide absolute certainty on query results. Learn more.</p>
+                 <p> Proofs enable you to provide absolute certainty on query results.</p>
             </div>
             <a href="/"><img src="img/plus-icon.svg"></a>
         </div>
@@ -161,8 +154,8 @@
         <div class="block-text">
             <span class="colored-text">HADS</span>
             <h2>What is a HADS?</h2>
-            <p>A HADS is, simply speaking, an ADS (authenticated data structures) containing ADSs.This architecture allows to efficiently provide cryptographic proofs alongside secondary index query results.</p>
-            <p>In our case, it's a tree containing trees which themselves may contain trees and so forth. Additional subtrees are automatically created for secondary indexes, and each secondary index subtree has additional subtrees for each unique value.</p>          
+            <p>A HADS is, simply speaking, an ADS (authenticated data structure) containing additional ADSs. This architecture allows GroveDB to efficiently provide cryptographic proofs alongside secondary index query results.</p>
+            <p>In our case, the HADS is a Merkle tree whose nodes contain the root hashes of additional Merkle trees which themselves may contain the root hashes of additional Merkle trees and so forth. Subtrees are automatically created for secondary indexes, and each secondary index subtree has additional subtrees for each unique value.</p>          
             <p>For example, say there is a “Restaurants Who Accept Dash” contract with a “Restaurants” document type. One of the secondary indexes for this document type might be “City”, which indicates which city the restaurant is located in.</p>
             <p>This “City” secondary index would have its own subtree which stores all of the city names for which there are restaurants in the contract. Each city would then have its own subtree, containing the restaurants in that city.</p>
         </div>
@@ -178,7 +171,7 @@
                 <img src="img/icon-9.svg"><p>Support for compound indexes</p>
             </div>
             <div class="list">
-                <img src="img/icon-9.svg"><p>Secondary index proofs are finally market-ready</p>
+                <img src="img/icon-9.svg"><p>Secondary index query proofs are finally market-ready</p>
             </div>
         </div>
     </div>
