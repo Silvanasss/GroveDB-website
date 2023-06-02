@@ -36,7 +36,7 @@ header{width: 100%;position: relative;z-index: 100;}
 /* === Banner Section ===*/
 .main-banner {margin-top: -95px;}
 .banner-background{background-image: url(../img/banner-1.svg);background-repeat: no-repeat;background-position: 50% -90px;display: flex;flex-direction: column;justify-content: center;text-align: center;color: #fff;}
-.text-banner h1{color: #fff;}
+.text-banner h1{font-size: 50px; color: #fff;}
 .text-banner p{font-size: 18px;}
 
 /* === Mixed ===*/
@@ -58,11 +58,12 @@ header{width: 100%;position: relative;z-index: 100;}
 
 /* === Section Two ===*/
 .title-background{width: 100%;background-image: url(../img/banner-4.svg);background-repeat: no-repeat;background-size: contain;background-size: contain;background-position: center;min-height: 450px;display: flex;flex-direction: column;justify-content: center;text-align: center;}
-.title-background h2{background-image: linear-gradient(90deg, #FFF 0%, #9AD8FE 100%);background-clip: text;text-fill-color: transparent;background-size: 100%;background-repeat: repeat;-webkit-background-clip: text;-webkit-text-fill-color: transparent;-moz-background-clip: text;-moz-text-fill-color: transparent;}
+.title-background h2{background-image: linear-gradient(90deg, #FFF 0%, #FFF 100%);background-clip: text;text-fill-color: transparent;background-size: 100%;background-repeat: repeat;-webkit-background-clip: text;-webkit-text-fill-color: transparent;-moz-background-clip: text;-moz-text-fill-color: transparent;}
 .title-background h2, .title-background p{max-width: 600px;margin: 25px auto;}
 .title-background p a{color: #fff;}
 .info-blocks{display: flex;}
 .index-block{display: flex; flex-direction: column;padding: 0 33px 30px 33px;border-radius: 50px;width: 50%;}
+.paul {height: 180px; width: 445px;}
 .index-block h4{min-height: 50px;}
 .index-block a{align-self: end;}
 .index-block a img{width: 30px;}
@@ -79,7 +80,7 @@ header{width: 100%;position: relative;z-index: 100;}
 #textModal{border-radius: 0;width: 870px;margin:auto;}
 #textModal .modal-header{border: 0;color: #fff;position: relative;height:35px; }
 #textModal .modal-header h3{font-size: 18px;line-height: 22px;font-family:Arial, Helvetica, sans-serif;padding:5px;}
-#textModal .modal-body{height: 489px;max-height: none;overflow: hidden;margin: 25% 0;background: #141414;border-radius: 50px;padding: 30px 50px;text-align: left; }
+#textModal .modal-body{height: 489px;max-height: none;overflow: hidden;margin: 10% 0;background: #141414;border-radius: 50px;padding: 30px 50px;text-align: left; }
 #textModal .modal-footer:empty{display: none !important; }
 #textModal .close{background: #ffffff5c;color: #141414;font-size: 18px;margin: 0;opacity: 1;position: absolute;right: 34px;text-shadow: none;top: 34px;width: 30px;border-radius: 59px;border: none;height: 30px;font-weight: 700; }
 
@@ -218,4 +219,5 @@ footer a {color: #fff;}
   table td{border-bottom: 1px solid #ddd;display: block;text-align: right;}
   table td::before{content: attr(data-label);float: left;font-weight: bold;text-transform: uppercase;} 
   table td:last-child{border-bottom: 0;}
+}
 }
