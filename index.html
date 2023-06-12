@@ -139,7 +139,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Inclusion Proofs</td>
+                    <td class="table-header">Inclusion Proofs</td>
                     <td class="plus blue-back" data-label="GroveDB"><img src="img/icon-9.svg"></td>
                     <td class="plus" data-label="ImmuDB"><img src="img/icon-9.2.svg"></td>
                     <td class="plus" data-label="ProvenDB"><img src="img/icon-9.2.svg"></td>
@@ -147,7 +147,7 @@
                     <td class="minus" data-label="BigchainDB">-</td>
                 </tr>
                 <tr>
-                    <td>Non-Inclusion Proofs</td>
+                    <td class="table-header">Non-Inclusion Proofs</td>
                     <td class="plus blue-back" data-label="GroveDB"><img src="img/icon-9.svg"></td>
                     <td class="minus" data-label="ImmuDB">-</td>
                     <td class="minus" data-label="ProvenDB">-</td>
@@ -155,23 +155,7 @@
                     <td class="minus" data-label="BigchainDB">-</td>
                 </tr>
                 <tr>
-                    <td>Complex Queries</td>
-                    <td class="plus blue-back" data-label="GroveDB"><img src="img/icon-9.svg"></td>
-                    <td class="plus" data-label="ImmuDB"><img src="img/icon-9.2.svg"></td>
-                    <td class="plus" data-label="ProvenDB"><img src="img/icon-9.2.svg"></td>
-                    <td class="plus" data-label="Trillian"><img src="img/icon-9.2.svg"></td>
-                    <td class="plus" data-label="BigchainDB"><img src="img/icon-9.2.svg"></td>
-                </tr>
-                <tr>
-                    <td>Query Proofs</td>
-                    <td class="plus blue-back" data-label="GroveDB"><img src="img/icon-9.svg"></td>
-                    <td class="minus" data-label="ImmuDB">-</td>
-                    <td class="minus" data-label="ProvenDB">-</td>
-                    <td class="minus" data-label="Trillian">-</td>
-                    <td class="minus" data-label="BigchainDB">-</td>
-                </tr>
-                <tr>
-                    <td>Data Immutability</td>
+                    <td class="table-header">Complex Queries</td>
                     <td class="plus blue-back" data-label="GroveDB"><img src="img/icon-9.svg"></td>
                     <td class="plus" data-label="ImmuDB"><img src="img/icon-9.2.svg"></td>
                     <td class="plus" data-label="ProvenDB"><img src="img/icon-9.2.svg"></td>
@@ -179,7 +163,7 @@
                     <td class="plus" data-label="BigchainDB"><img src="img/icon-9.2.svg"></td>
                 </tr>
                 <tr>
-                    <td>Data Mutability</td>
+                    <td class="table-header">Query Proofs</td>
                     <td class="plus blue-back" data-label="GroveDB"><img src="img/icon-9.svg"></td>
                     <td class="minus" data-label="ImmuDB">-</td>
                     <td class="minus" data-label="ProvenDB">-</td>
@@ -187,7 +171,15 @@
                     <td class="minus" data-label="BigchainDB">-</td>
                 </tr>
                 <tr>
-                    <td>Operation Costs</td>
+                    <td class="table-header">Data Immutability</td>
+                    <td class="plus blue-back" data-label="GroveDB"><img src="img/icon-9.svg"></td>
+                    <td class="plus" data-label="ImmuDB"><img src="img/icon-9.2.svg"></td>
+                    <td class="plus" data-label="ProvenDB"><img src="img/icon-9.2.svg"></td>
+                    <td class="plus" data-label="Trillian"><img src="img/icon-9.2.svg"></td>
+                    <td class="plus" data-label="BigchainDB"><img src="img/icon-9.2.svg"></td>
+                </tr>
+                <tr>
+                    <td class="table-header">Data Mutability</td>
                     <td class="plus blue-back" data-label="GroveDB"><img src="img/icon-9.svg"></td>
                     <td class="minus" data-label="ImmuDB">-</td>
                     <td class="minus" data-label="ProvenDB">-</td>
@@ -195,7 +187,15 @@
                     <td class="minus" data-label="BigchainDB">-</td>
                 </tr>
                 <tr>
-                    <td>Language</td>
+                    <td class="table-header">Operation Costs</td>
+                    <td class="plus blue-back" data-label="GroveDB"><img src="img/icon-9.svg"></td>
+                    <td class="minus" data-label="ImmuDB">-</td>
+                    <td class="minus" data-label="ProvenDB">-</td>
+                    <td class="minus" data-label="Trillian">-</td>
+                    <td class="minus" data-label="BigchainDB">-</td>
+                </tr>
+                <tr>
+                    <td class="table-header">Language</td>
                     <td class="text blue-back last" data-label="GroveDB">Rust</td>
                     <td class="text" data-label="ImmuDB">Go</td>
                     <td class="text" data-label="ProvenDB">JavaScript</td>
@@ -538,7 +538,7 @@
   <div class="section section-four tag">
     <h2>What is Merk?</h2>
     <p>By default, all trees in GroveDB are Merk trees.</p>
-    <p>Merk is a Merkle AVL tree designed for performance. Notable features include concurrent operations for higher throughput, an optimized key/value layout for performant usage of the backing store, and efficient proof generation to enable bulk tree replication.</p>
+    <p class="text-section">Merk is a Merkle AVL tree designed for performance. Notable features include concurrent operations for higher throughput, an optimized key/value layout for performant usage of the backing store, and efficient proof generation to enable bulk tree replication.</p>
     <a class="button" href="">Read Documentation<img src="img/button-icons.svg"></a>
     <h5>Features of the Merk trees</h5>
     <div class="flex-blocks tag">
