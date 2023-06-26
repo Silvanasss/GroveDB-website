@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <title>GroveDB: Tutorials</title>
 </head>
 <body class="tutorials">
@@ -12,14 +13,14 @@
         <nav class="nav toggle">
             <div class="header-menu">
               <div class="logo-header logo-mobile">
-                <a href="/"><img src="img/grovedb-logo.svg"></a>
+                <a href="https://www.grovedb.org/"><img src="img/grovedb-logo.svg"></a>
               </div>
               <div class="nav-mobile"><a id="navbar-toggle"><span></span></a></div>
               <ul class="nav-list">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#table">Comparison Table</a></li>
-                <li><a href="/documentation">Documentation</a></li>
-                <li><a href="/tutorials">Tutorials</a></li>
+                <li><a href="https://www.grovedb.org/#features">Features</a></li>
+                <li><a href="https://www.grovedb.org/#table">Comparison Table</a></li>
+                <li><a href="/documentation.html">Documentation</a></li>
+                <li><a href="/tutorials.html">Tutorials</a></li>
                 <div class="header-social mobile">
                   <a href="https://www.twitter.com/dashpay">
                       <div class="icon-el twitter"></div>
@@ -233,7 +234,7 @@ Ok(item: [hex: 726f636b73, str: rocks])
                     <pre><code>
 impl Element {
     /// Set element to an item with a default flag value
-    pub fn new_item(item_value: Vec<u8>) -> Self {
+    pub fn new_item(item_value: Vec&lt;u8>) -> Self {
         Element::Item(item_value, None)
     }
 }                            
@@ -433,9 +434,9 @@ pub enum QueryItem {
 /// Subquery branch
 pub struct SubqueryBranch {
     /// Subquery path
-    pub subquery_path: Option&lt;Path>,
+    pub subquery_path: Option&lt;Path&gt;,
     /// Subquery
-    pub subquery: Option&lt;Box&lt;Query>>,
+    pub subquery: Option&lt;Box&lt;Query&gt;&gt;,
 }
                     </code></pre>
                     <p>A conditional subquery branch is the same as default subquery branches, but 
@@ -898,35 +899,6 @@ Yes
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type='text/javascript' src='js/main.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script>
-        hljs.highlightAll();
-    
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        document.head.appendChild(link);
-    
-        function updateHighlightStyle() {
-            var isNightMode = $('body').hasClass('night');
-    
-            if(isNightMode) {
-                link.href = 'https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/atom-one-dark.min.css';
-            } else {
-                link.href = 'https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/atom-one-light.min.css';
-            }
-    
-            hljs.highlightAll();
-        }
-    
-        $(document).ready(function(){
-            $('.toggle-dn').click(function(){
-                $('.toggle-dn').toggleClass('active');
-                $('body').toggleClass('night');
-                updateHighlightStyle();
-            })
-    
-            // Call updateHighlightStyle on page load as well
-            updateHighlightStyle();
-        })
-    </script>    
+    <script type='text/javascript' src='js/docs.js'></script>  
 </body>
 </html>
